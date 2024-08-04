@@ -8,13 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      boxShadow: {
+        'custom-blue' : '1px 5px 10px rgba(56, 189, 248, 1)',
+      },
+      colors: {
+        'cream' : '#FFFDD0',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-box-shadow'),
+  ],
 };
 export default config;
